@@ -1,0 +1,36 @@
+<head>
+    <title>Registeration Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+    <script src="/home/chakravarthi/Desktop/chatApp/angular.min.js"></script>
+    <script src="/home/chakravarthi/Desktop/chatApp/registeration.controller.js"></script>
+
+</head>
+
+<body ng-app="chatApp">
+ 
+    <form ng-controller="registerCtrl">
+            <h1>Create a New Account</h1>
+        <table>
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" name="name" ng-model="name" placeholder="Enter Name" required></td><br>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="text" name="email" ng-model="email" placeholder="Enter Your Email" required></td><br>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="pwd" ng-model="password" placeholder="Enter Your password" required></td><br>
+            </tr>
+            <!-- <tr>
+                <td>Confirm Password :</td>
+                <td><input type="password" name="cpwd" ng-model="rp.confirmPassword" placeholder="Confrim Password" required><br>
+            </tr> -->
+            <tr>
+                <td><input type="submit" ng-click="submit()" value="Submit"></td>
+                <td>Already have a Account?<a href="login.html">signIn</a></td>
+            </tr>
+        </table>
+    </form>
+</body>

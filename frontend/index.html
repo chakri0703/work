@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>homePage</title>
+
+      <!-- required cdns-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+    
+    <!--- app.js file-->
+    <script src="app.js"></script>
+        <!---- required css files -->
+        <script src="./css/login.css" type="text/css"></script>
+        <script src="./css//forget.css" type="text/css"></script>
+        <script src="./css/register.css" type="text/css"></script>
+        <script src="./css/reset.css" type="text/css"></script>
+    
+    <!---- required service files --> 
+    <script src="./services/registerService.js"></script>
+    <script src="./services/serviceLogin.js"></script>
+    <script src="./services/forgetService.js"></script>
+    <script src="./services/resetService.js"></script>
+
+    <!-- REQUIRED   controller Files-->
+    <script src="./controllers/changePassword.controller.js"></script>
+    <script src="./controllers/forget.controller.js"></script>
+    <script src="./controllers/login.controller.js"></script>
+    <script src="./controllers/registeration.controller.js"></script>
+
+    
+</head>
+<body np-app="chatApp">
+    <ui-view>
+        hello
+    </ui-view>
+</body>
+
+</html>
